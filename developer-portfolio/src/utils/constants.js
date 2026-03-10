@@ -4,7 +4,7 @@ export const PERSONAL_INFO = {
     email: 'parishalan666@gmail.com',
    location: 'San Fransisco, CA',
    tagline: 'Crafting seamless digital experiences with modern web technology etc.',
-    resume: '/resume.pdf',
+    resume: '../../../public/documents/resume.pdf',
     bio: [
         "I am a passionate React Developer with over 3 years experience building seamless UIs",
         "My experties spans the entire frontend ecosystem, from Reat and Next.js",
