@@ -4,17 +4,19 @@ import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiNodedotjs, SiMongo
 import { PERSONAL_INFO, ABOUT_STATS } from '../../utils/constants';
 import FadeIn from '../animations/FadeIn';
 import RadialGradientBackground from '../backgrounds/RadialGradientBackground';
+import { skills } from '../../data/skills';
+
 
 const About = () => {
     // Skills
-    const Jkills = [
-        { name: 'React. js', icon: SiReact, color: '#61DAFB' },
-        { name: 'Next.js', icon: SiNextdotjs, color: '#000000' },
-        { name: 'TypeScript', icon: SiTypescript, color: '#3178C6' },
-        { name: 'Tailwind CSS', icon: SiTailwindcss, color: '#06B6D4' },
-        { name: 'Node.js', icon: SiNodedotjs, color: '#339933' },
-        { name: 'MongoDB', icon: SiMongodb, color: '#47A248' },
-    ];
+    // const Jkills = [
+    //     { name: 'React.js', icon: SiReact, color: '#61DAFB' },
+    //     { name: 'Next.js', icon: SiNextdotjs, color: '#000000' },
+    //     { name: 'TypeScript', icon: SiTypescript, color: '#3178C6' },
+    //     { name: 'Tailwind CSS', icon: SiTailwindcss, color: '#06B6D4' },
+    //     { name: 'Node.js', icon: SiNodedotjs, color: '#339933' },
+    //     { name: 'MongoDB', icon: SiMongodb, color: '#47A248' },
+    // ];
 
 
     return (
@@ -104,7 +106,7 @@ const About = () => {
                             </div>
 
                             <div className="relative group">
-                                <div className="absolute inset-0 bg-liear-to-br from-primary/10 to-primary/5 rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
+                                <div className="absolute inset-0 bg-linear-to-br from-primary/10 to-primary/5 rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
                                 <div className="relative bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-primary/30 transition-all duration-300 h-full">
                                     <div className="p-3 bg-primary/10 rounded-xl w-fit mb-4">
                                         <Sparkles className="w-5 h-5 text-primary" />
@@ -117,7 +119,7 @@ const About = () => {
                             </div>
 
                             <div className="relative group">
-                                <div className="absolute inset-0 bg-liear-to-br from-primary/10 to-primary/5 rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
+                                <div className="absolute inset-0 bg-linear-to-br from-primary/10 to-primary/5 rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
                                 <div className="relative bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-primary/30 transition-all duration-300 h-full">
                                     <div className="p-3 bg-primary/10 rounded-xl w-fit mb-4">
                                         <Download className="w-5 h-5 text-primary" />
@@ -150,8 +152,38 @@ const About = () => {
                             </div>
                         </div>
                     </FadeIn>
-
                 </div>
+
+                {/* Skills Grid Section */}
+                <FadeIn delay={500}>
+                    <div className="flex flex-col items-center gap-8">
+                        <div className="text-center">
+                            <h3 className="text-2xl font-normal text-white mb-2">
+                                Tech Stack and Expertise
+                            </h3>
+                            <p className="text-sm text-white/60">
+                                Technologies I worked with to build amazing software projects and web applications.
+                            </p>
+                        </div>
+                        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 w-full max-w-4xl">
+                            {skills.map((skill, index) => (
+                                <div
+                                    key={index}
+                                    className="group relative bg-white/5 hover:bg-white/10 border border-white/10 hover:border-primary/50 rounded-2xl p-6 flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:scale-120"
+                                >
+                                    <skill.icon className="text-3xl text-primary" />
+                                    <div className="text-sm text-white/80 font-medium text-center">
+                                        {skill.name}
+                                    </div>
+
+                                    {/* Hover Glow Effect */}
+                                    <div className="absolute inset-0 bg-linear-to-br from-primary/0 to-primary/0 group-hover:from-primary/10 group-hover:to-primary/10 rounded-2xl transition-all duration-300"></div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </FadeIn>
+
             </div>
         </section>
     )
