@@ -61,17 +61,17 @@ const Footer = () => {
                             Quick Links
                         </h4>
                         <ul className="space-y-3">
-                            {NAV_LINKS.map((link) =>{
+                            {NAV_LINKS.map((link) => (
                                 <li key={link.id}>
-                                    <button
-                                        onClick={() => scrollToSection(link.id)}
-                                        className="group flex items-center gap-2 text-white/60 hover:text-primary transition-all duration-300"
-                                    >
-                                        <div className="w-1.5 h-1.5 rounded-full bg-white/30 group-hover:bg-primary group-hover:w-2 transition-all duration-300" />
-                                        <span className="text-sm">{link.label}</span>
-                                    </button>
+                                <button
+                                    onClick={() => scrollToSection(link.id)}
+                                    className="group flex items-center gap-2 text-white/60 hover:text-primary transition-all duration-300"
+                                >
+                                    <div className="w-1.5 h-1.5 rounded-full bg-white/30 group-hover:bg-primary group-hover:w-2 transition-all duration-300" />
+                                    <span className="text-sm">{link.label}</span>
+                                </button>
                                 </li>
-                            })}
+                            ))}
                         </ul>
                     </div>
                 </FadeIn>
