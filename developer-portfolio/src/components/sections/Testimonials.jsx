@@ -70,7 +70,7 @@ const Testimonials = () => {
                 {testimonials.map((testimonial, index) => (
                   <div
                     key={testimonial.id}
-                    className="width-full shrink-0 px-4"
+                    className="w-full shrink-0 px-4"
                     style={{ scrollSnapAlign: "start" }}
                   >
                     <div className="max-w-4xl mx-auto">
@@ -143,7 +143,7 @@ const Testimonials = () => {
                       ? "bg-white w-6 h-2"
                       : "bg-white/30 w-2 h-2 hover:bg-white/50"
                   }`}
-                  aria-lebel={`Go to testimonial ${index + 1}`}
+                  aria-label={`Go to testimonial ${index + 1}`}
                 />
               ))}
             </div>
