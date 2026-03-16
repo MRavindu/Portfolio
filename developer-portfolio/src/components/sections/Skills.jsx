@@ -7,34 +7,44 @@ const Skills = () => {
     // Categorize skills
     const skillCategories = {
         'Frontend Development': [
-            skills.find(s => s.name === 'React. js'),
+            skills.find(s => s.name === 'HTML'),
             skills.find(s => s.name === 'JavaScript'),
-            skills.find(s => s.name === 'TypeScript'),
-            skills.find(s => s.name === 'Next.js'),
+            skills.find(s => s.name === 'React.js'),
+            skills.find(s => s.name === 'Angular.js'),
             skills.find(s => s.name === 'Tailwind CSS'),
+            skills.find(s => s.name === 'Bootstrap'),
+            skills.find(s => s.name === 'TypeScript'),
             skills.find(s => s.name === 'Redux'),
         ].filter(Boolean),
-        'Backend & APIs': [
-            skills.find(s => s.name === 'Node.js'),
-            skills.find(s => s.name === 'REST APIs'),
+        'Backend & APIs': [            
+            skills.find(s => s.name === 'MySQL'),
+            skills.find(s => s.name === 'Spring Boot'),
+            skills.find(s => s.name === 'PHP'),
+            skills.find(s => s.name === 'Python'),
+            skills.find(s => s.name === '.NET'),
+            skills.find(s => s.name === 'Java'),
+            skills.find(s => s.name === 'MongoDB'),
         ].filter(Boolean),
         'Tools & Others': [
-            skills.find(s => s.name === 'Git & GitHub'),
-            skills.find(s => s.name === 'Responsive Design'),
             skills.find(s => s.name === 'Figma'),
-            skills.find(s => s.name === 'Vite'),
+            skills.find(s => s.name === 'Git & GitHub'),
+            skills.find(s => s.name === 'VS Code'),
+            skills.find(s => s.name === 'Postman'),
+            skills.find(s => s.name === 'Jira'),
+            skills.find(s => s.name === 'Wordpress'),
+            skills.find(s => s.name === 'IntelliJ IDEA'),
         ].filter(Boolean),
     };
     
     // Get proficiency percentage
     const getProficiencyLevel = (level) => {
         const levels = {
-            'Expert': 90,
-            'Advanced': 75,
-            'Intermediate': 60,
-            'Beginner': 50,
+            'Expert': 85,
+            'Advanced': 65,
+            'Intermediate': 50,
+            'Beginner': 30,
         }
-        return levels[level] || 50; //50
+        return levels[level] || 25; //50
     };
 
     //Get level color

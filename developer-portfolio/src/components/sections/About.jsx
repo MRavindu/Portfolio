@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Download, Code2, Sparkles } from 'lucide-react';
+import { Download, Code2, Sparkles, Webhook } from 'lucide-react';
 import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiNodedotjs, SiMongodb} from 'react-icons/si';
 import { PERSONAL_INFO, ABOUT_STATS } from '../../utils/constants';
 import FadeIn from '../animations/FadeIn';
@@ -33,16 +33,15 @@ const About = () => {
                                 <div className="inline-flex items-center gap-2.5 px-5 py-2.5 border border-primary/30 bg-primary/10 rounded-full w-fit">
                                     <Code2 className="w-4 h-4 text-primary" />
                                     <span className="text-sm text-primary font-medium">
-                                        Full-Stack Developer
+                                        Frontend / Full-Stack Software Engineer
                                     </span>
-
                                     <Sparkles className="w-4 h-4 text-primary" />
                                 </div>
                             </FadeIn>
 
                             <FadeIn delay={100}>
                                 <h2 className="text-4xl lg:text-5xl font-normal text-white leading-tight">
-                                    Crafting Digital Experiences that matter
+                                    Crafting Modern Web Experiences That Scale
                                 </h2>
                             </FadeIn>
 
@@ -96,9 +95,9 @@ const About = () => {
                                             <Code2 className="w-6 h-6 text-primary" />
                                         </div>
                                         <div className="flex-1">
-                                            <h3 className="text-lg font-semibold text-white mb-2"> Expertise</h3>
+                                            <h3 className="text-lg font-semibold text-white mb-2">Expertise</h3>
                                             <p className="text-sm text-white/70 leading-relaxed">
-                                                Specialised in building scalable web applications with modern technologies and coding best practices.
+                                                Through my academic journey and professional training, I have gained experience in: Designing responsive and accessible UI components, Building scalable frontend architectures, Writing maintainable and testable code and Collaborating using Agile workflows and Git-based development
                                             </p>
                                         </div>
                                     </div>
@@ -113,7 +112,7 @@ const About = () => {
                                     </div>
                                     <h3 className="text-lg font-semibold text-white mb-2">Clean Code</h3>
                                     <p className="text-sm text-white/70 leading-relaxed">
-                                        Writing maintainable, well-documented code that scales
+                                        Writing maintainable, scalable, and well-structured code following software engineering best practices.
                                     </p>
                                 </div>
                             </div>
@@ -126,7 +125,7 @@ const About = () => {
                                     </div>
                                     <h3 className="text-lg font-semibold text-white mb-2">Performance</h3>
                                     <p className="text-sm text-white/70 leading-relaxed">
-                                        Optimizing for speed and efficiency in every projects.
+                                        Improving application speed and efficiency through efficient rendering, lazy loading, and optimization techniques.
                                     </p>
                                 </div>
                             </div>
@@ -134,7 +133,15 @@ const About = () => {
                             <div className="col-span-2 relative group">
                                 <div className="absolute inset-0 bg-linear-to-br from-primary/10 to-primary/5 rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
                                 <div className="relative bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-primary/30 transition-all duration-300">
-                                    <div className="grid grid-cols-3 gap-6 text-center">
+                                    
+                                    <div className="p-3 bg-primary/10 rounded-xl w-fit mb-4">
+                                        <Webhook className="w-5 h-5 text-primary" />
+                                    </div>
+                                    <h3 className="text-lg font-semibold text-white mb-2">Backend Integration</h3>
+                                    <p className="text-sm text-white/70 leading-relaxed">
+                                        Building and integrating RESTful APIs using Spring Boot and modern backend architecture mechanisms.
+                                    </p>
+                                    {/* <div className="grid grid-cols-3 gap-6 text-center">
                                         <div>
                                             <div className="text-2xl font-bold text-primary mb-1">100%</div>
                                             <div className="text-xs text-white/60">Client Satisfaction</div>
@@ -147,7 +154,7 @@ const About = () => {
                                             <div className="text-2xl font-bold text-primary mb-1">Fast</div>
                                             <div className="text-xs text-white/60">Delivery Time</div>
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         </div>
@@ -159,14 +166,14 @@ const About = () => {
                     <div className="flex flex-col items-center gap-8">
                         <div className="text-center">
                             <h3 className="text-2xl font-normal text-white mb-2">
-                                Tech Stack and Expertise
+                                Tech-Stack and Expertise
                             </h3>
                             <p className="text-sm text-white/60">
-                                Technologies I worked with to build amazing software projects and web applications.
+                                Technologies and tools I use to design and develop modern web applications.
                             </p>
                         </div>
-                        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 w-full max-w-4xl">
-                            {skills.map((skill, index) => (
+                        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 w-full max-w-4xl">
+                            {skills.slice(0, 10).map((skill, index) => (
                                 <div
                                     key={index}
                                     className="group relative bg-white/5 hover:bg-white/10 border border-white/10 hover:border-primary/50 rounded-2xl p-6 flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:scale-120"

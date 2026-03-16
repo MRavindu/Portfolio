@@ -1,6 +1,6 @@
 import {useState} from 'react';
 import {ChevronDown, Star} from 'lucide-react';
-import {SiReact, SiNextdotjs, SiTailwindcss, SiNodedotjs, SiMongodb} from 'react-icons/si';
+import {SiReact, SiAngular, SiTypescript, SiPython, SiTailwindcss, SiBootstrap, SiSpringboot, SiMongodb} from 'react-icons/si';
 import {PERSONAL_INFO, STATS} from '../../utils/constants';
 import {scrollToSection} from '../../hooks/useScrollSpy';
 import FadeIn from '../animations/FadeIn'
@@ -28,13 +28,13 @@ const Hero = () => {
 
             <FadeIn delay={100}>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal text-white mb-6 leading-tight">
-                React.js Developer Portfolio
+                Software Engineer Portfolio
               </h1>
             </FadeIn>
 
             <FadeIn delay={200}>
               <p className="text-lg text-white/70 max-w-[550px] mb-8">
-                Building modern, scalable web application with React, JavaScript and cutting-edge technologies.
+                Building scalable, high-performance web applications with React, TypeScript, and Spring Boot.
               </p>
             </FadeIn>
 
@@ -94,15 +94,27 @@ const Hero = () => {
                       </div>
 
                       <div className="w-6 h-6 flex items-center justify-center hover:scale-120 transition-transform duration-300">
-                        <SiNextdotjs className='w-full h-full text-primary' />
+                        <SiAngular className='w-full h-full text-primary' />
                       </div>
 
                       <div className="w-6 h-6 flex items-center justify-center hover:scale-120 transition-transform duration-300">
-                        <SiNodedotjs className='w-full h-full text-primary' />
+                        <SiTypescript className='w-full h-full text-primary' />
+                      </div>
+
+                      <div className="w-6 h-6 flex items-center justify-center hover:scale-120 transition-transform duration-300">
+                        <SiPython className='w-full h-full text-primary' />
                       </div>
 
                       <div className="w-6 h-6 flex items-center justify-center hover:scale-120 transition-transform duration-300">
                         <SiTailwindcss className='w-full h-full text-primary' />
+                      </div>
+
+                      <div className="w-6 h-6 flex items-center justify-center hover:scale-120 transition-transform duration-300">
+                        <SiBootstrap className='w-full h-full text-primary' />
+                      </div>
+
+                      <div className="w-6 h-6 flex items-center justify-center hover:scale-120 transition-transform duration-300">
+                        <SiSpringboot className='w-full h-full text-primary' />
                       </div>
 
                       <div className="w-6 h-6 flex items-center justify-center hover:scale-120 transition-transform duration-300">

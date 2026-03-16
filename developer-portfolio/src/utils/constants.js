@@ -1,14 +1,14 @@
 export const PERSONAL_INFO = {
     name: 'Ravindu Medagama',
-    title: 'React Developer & UI/UX Enthusiast',
+    title: 'Frontend & Full-Stack Web Developer',
     email: 'parishalan666@gmail.com',
-   location: 'San Fransisco, CA',
+   location: 'Bandaragama, Sri Lanka',
    tagline: 'Crafting seamless digital experiences with modern web technology etc.',
     resume: '../../../public/documents/resume.pdf',
     bio: [
-        "I am a passionate React Developer with over 3 years experience building seamless UIs",
-        "My experties spans the entire frontend ecosystem, from Reat and Next.js",
-        "When I'm not coding you'll find me contributing to open-source projects."
+        "I am a Computer Science undergraduate passionate about building high-quality web applications and intuitive user interfaces.",
+        "My focus is on frontend engineering using React and TypeScript, while also expanding my expertise into full-stack development with Spring Boot and REST APIs.",
+        "I’m actively seeking opportunities as a Frontend Engineer or Full-Stack Developer where I can contribute to building impactful digital products while continuously improving my technical expertise."
     ]
 };
 
@@ -20,16 +20,16 @@ export const SOCIAL_LINKS = {
 };
 
 export const STATS = [
-    { label: 'Years Experience', value: '3+' },
-    { label: 'Projects Completed', value: '50+' },
-    { label: 'Technologies', value: '15+' },
-    { label: 'Client Satisfaction', value: '98%' }
+    { label: 'Years Experience', value: '2+' },
+    { label: 'Projects Completed', value: '5+' },
+    { label: 'Technologies', value: '10+' },
+    { label: 'Focus on Clean Code & Performance', value: '98%' }
 ];
 
 export const ABOUT_STATS = [
-{ label: 'Happy Clients', value: '45+' },
-{ label: 'Code Commits', value: '2.5K+' },
-{ label: 'GitHub Stars', value: '500+' }
+{ label: 'Academic Projects Completed', value: '5+' },
+{ label: 'Technologies Used', value: '10+' },
+{ label: 'Coding Hours', value: '1000+' }
 ];
 
 export const NAV_LINKS = [

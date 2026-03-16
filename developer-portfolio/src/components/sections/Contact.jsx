@@ -64,7 +64,7 @@ const Contact = () => {
                         Let's Work Together
                     </h2>
                     <p className="text-lg text-white/60 max-w-2xl mx-auto">
-                        Have a project in mind? Let's discuss how we can bring your ideas to life.
+                        Interested in hiring a Frontend / Full-Stack developer? Let’s discuss how I can contribute to your team or project.
                     </p>
                 </div>
             </FadeIn>
@@ -72,7 +72,12 @@ const Contact = () => {
             <div className="grid md:grid-cols-2 gap-12">
                 <FadeIn delay={100}>
                     <div className="bg-white/5 border border-white/10 rounded-2xl p-8">
-                        <form onSubmit={handleSubmit} className="space-y-6">
+                        <img
+                            src="../../../public/images/Contact.png"
+                            alt="Me at work"
+                            className="w-full h-full object-cover"
+                            />
+                        {/* <form onSubmit={handleSubmit} className="space-y-6">
                             <div>
                                 <label htmlFor="name" className="block text-sm font-medium text-white/80 mb-2">
                                     Name
@@ -136,7 +141,7 @@ const Contact = () => {
                                     {status.message}
                                 </div>
                             )}
-                        </form>
+                        </form> */}
                     </div>
                 </FadeIn>
 

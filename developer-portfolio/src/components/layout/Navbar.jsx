@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Code, Menu, X } from "lucide-react";
+import { Code, Menu, X, Download } from "lucide-react";
 import { NAV_LINKS, PERSONAL_INFO } from "../../utils/constants";
-import {useScrollSpy} from "../../hooks/useScrollSpy"
+import { useScrollSpy, scrollToSection } from "../../hooks/useScrollSpy";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -64,10 +64,11 @@ const Navbar = () => {
               {/* CTA Button */}
               <div className="hidden md:flex items-center gap-2">
                 <button
-                  onClick={() => handleNavClick('contact')}
-                  className="px-7 py-3.5 bg-white text-[#212121] font-medium text-base rounded-[17px] border border-white hover:bg-white/90 transition-all duration-300" 
+                    onClick={() => window.open(PERSONAL_INFO.resume, '_blank')}
+                    className="inline-flex items-center gap-3 bg-white hover:bg-white/90 text-black rounded-full px-8 py-4 text-base font-medium transition-all duration-300 w-fit group"
                 >
-                  Hire Me
+                    <Download className="w-5 h-5 group-hover:translate-y-0.5 transition-transform duration-300" />
+                    Download Resume
                 </button>
               </div>
 
@@ -103,10 +104,11 @@ const Navbar = () => {
                     </button>
                 ))}
                 <button
-                    onClick={() => handleNavClick('contact')}
-                    className="w-full px-7 py-3.5 bg-white text-[#212121] font-medium text-base rounded-[17px] border border-white hover:bg-white/90 transition-all duration-300 mt-2"
-                  >
-                    Hire Me
+                    onClick={() => window.open(PERSONAL_INFO.resume, '_blank')}
+                    className="inline-flex items-center gap-3 bg-white hover:bg-white/90 text-black rounded-full px-8 py-4 text-base font-medium transition-all duration-300 w-fit group"
+                >
+                    <Download className="w-5 h-5 group-hover:translate-y-0.5 transition-transform duration-300" />
+                    Download Resume
                 </button>
               </div>
             </div>
