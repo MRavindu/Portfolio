@@ -79,7 +79,7 @@ const Hero = () => {
                 {/* Image Container */}
                 <div className="relative rounded-2xl overflow-hidden m-[1px] h-[calc(100%-2px)]">
                   <img
-                    src="../../../public/images/Myimage.png"
+                    src={`${import.meta.env.BASE_URL}images/Myimage.png`}
                     alt="Me at work"
                     className="w-full h-full object-cover"
                     />
