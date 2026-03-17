@@ -3,7 +3,7 @@ export const projects = [
         id: 1,
         title: 'E-Commerce Platform',
         description: 'Full-stack onlie shopping application with real-time inventory management, secure payment',
-        image: '/images/projects/project.png',
+        image: `${import.meta.env.BASE_URL}images/projects/project.png`,
         category: 'Full Stack',
         technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
         metrics: '40% increase in conversion',
