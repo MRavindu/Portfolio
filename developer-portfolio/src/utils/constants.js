@@ -4,7 +4,7 @@ export const PERSONAL_INFO = {
     email: 'parishalan666@gmail.com',
    location: 'Bandaragama, Sri Lanka',
    tagline: 'Crafting seamless digital experiences with modern web technology etc.',
-    resume: '../../../public/documents/resume.pdf',
+    resume: '/Portfolio/documents/resume.pdf',
     bio: [
         "I am a Computer Science undergraduate passionate about building high-quality web applications and intuitive user interfaces.",
         "My focus is on frontend engineering using React and TypeScript, while also expanding my expertise into full-stack development with Spring Boot and REST APIs.",
