@@ -73,7 +73,7 @@ const Contact = () => {
                 <FadeIn delay={100}>
                     <div className="bg-white/5 border border-white/10 rounded-2xl p-8">
                         <img
-                            src="../../../public/images/Contact.png"
+                            src={`${import.meta.env.BASE_URL}images/Contact.png`}
                             alt="Me at work"
                             className="w-full h-full object-cover"
                             />

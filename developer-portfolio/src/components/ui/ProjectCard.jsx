@@ -1,10 +1,10 @@
 import React from 'react';
-import { ExternalLink, Github, TrendingUp } from 'lucide-react';
+import { ExternalLink, Github, TrendingUp, Figma } from 'lucide-react';
 
 
 const ProjectCard = ({project}) => {
 
-    const {title, description, image, technologies, metrics, demoUrl, githubUrl} = project
+    const {title, description, image, technologies, metrics, demoUrl, githubUrl, figmaUrl} = project
 
 
     return (
@@ -39,6 +39,18 @@ const ProjectCard = ({project}) => {
                 title="View Code"
               >
                 <Github className="w-4 h-4 text-white" />
+              </a>
+            )}
+
+            {figmaUrl && (
+              <a
+                href={figmaUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2.5 bg-white/10 backdrop-blur-md rounded-lg border border-white/20 hover:bg-primary/30 hover:border-primary/50 transition-all duration-300 hover:scale-110"
+                title="View Code"
+              >
+                <Figma className="w-4 h-4 text-white" />
               </a>
             )}
           </div>

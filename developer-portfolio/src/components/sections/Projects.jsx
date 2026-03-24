@@ -1,6 +1,8 @@
 import React, {useState, useRef} from 'react';
 import {projects, categories} from '../../data/projects';
-import { Briefcase, Sparkle, Target, Globe, Palette, Zap, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Briefcase, AppWindow, ChevronLeft, ChevronRight, CircuitBoard } from 'lucide-react';
+import { DiAppstore, DiStackoverflow } from "react-icons/di";
+import { SiDatabricks } from "react-icons/si";
 import ProjectCard from '../ui/ProjectCard';
 import FadeIn from '../animations/FadeIn';
 
@@ -48,10 +50,11 @@ const Projects = () => {
 
     // Category icons mapping
     const categoryIcons = {
-        'All': Target,
-        'Web Apps': Globe,
-        'UI Components': Palette,
-        'Full Stack': Zap,
+        'All': DiAppstore,
+        'UI Designs': CircuitBoard,
+        'Static Website': AppWindow,
+        'Full Stack': SiDatabricks,
+        'MiniApps': DiStackoverflow,
     };
 
   return (
