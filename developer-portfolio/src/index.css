@@ -4,7 +4,7 @@
 @theme {
   --font-display: "Urbanist", system-ui, sans-serif;
   --breakpoint-3xl: 1920px;
-  --color-primary: #8dff69;
+  --color-primary: #ff922b;
 }
 
 @layer base {
@@ -42,7 +42,7 @@
   /* Firefox */
   * {
     scrollbar-width: thin;
-    scrollbar-color: #6fe047 #0a0a0a;
+    scrollbar-color: #ff922b #0a0a0a;
   }
 
   /* Hide Scrollbar */

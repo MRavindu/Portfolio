@@ -41,7 +41,7 @@ const Navbar = () => {
                 className="text-2xl font-bold bg-linear-to-r from-primary via-primary/50 to-primary/30 bg-clip-text text-transparent hover:opacity-80 transition-opacity"
                 aria-label="home"
                 >
-                  {PERSONAL_INFO.name.split(' ')[0]}
+                  {PERSONAL_INFO.name}
                 </button>
             </div>
 

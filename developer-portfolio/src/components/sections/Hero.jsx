@@ -30,11 +30,12 @@ const Hero = () => {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal text-white mb-6 leading-tight">
                 Software Engineer Portfolio
               </h1>
+              
             </FadeIn>
 
             <FadeIn delay={200}>
               <p className="text-lg text-white/70 max-w-[550px] mb-8">
-                Building scalable, high-performance web applications with React, TypeScript, and Spring Boot.
+                Building scalable, performance optimized web applications with React, TypeScript, and Spring Boot.
               </p>
             </FadeIn>
 

@@ -1,6 +1,6 @@
 export const PERSONAL_INFO = {
     name: 'Ravindu Medagama',
-    title: 'Frontend & Full-Stack Web Developer',
+    title: 'Frontend / Full-Stack Web Developer',
     email: 'parishalan666@gmail.com',
    location: 'Bandaragama, Sri Lanka',
    tagline: 'Crafting seamless digital experiences with modern web technology etc.',
@@ -21,9 +21,9 @@ export const SOCIAL_LINKS = {
 
 export const STATS = [
     { label: 'Years Experience', value: '2+' },
-    { label: 'Projects Completed', value: '5+' },
-    { label: 'Technologies', value: '10+' },
-    { label: 'Focus on Clean Code & Performance', value: '98%' }
+    { label: 'Projects Completed', value: '3+' },
+    { label: 'Familiar Technologies', value: '10+' },
+    { label: 'Focus on Clean Code', value: '98%' }
 ];
 
 export const ABOUT_STATS = [
