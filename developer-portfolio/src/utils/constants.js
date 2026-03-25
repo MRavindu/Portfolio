@@ -1,7 +1,7 @@
 export const PERSONAL_INFO = {
     name: 'Ravindu Medagama',
     title: 'Frontend / Full-Stack Web Developer',
-    email: 'parishalan666@gmail.com',
+    email: 'ravindumedagama@gmail.com',
    location: 'Bandaragama, Sri Lanka',
    tagline: 'Crafting seamless digital experiences with modern web technology etc.',
     resume: '/Portfolio/documents/resume.pdf',
@@ -13,10 +13,10 @@ export const PERSONAL_INFO = {
 };
 
 export const SOCIAL_LINKS = {
-    github: 'https://github.com',
-    linkedin: 'https://linkedin.com/',
-    twitter: 'https://twitter.com',
-    dribbble: 'https://dribbble.com'
+    github: 'https://github.com/MRavindu',
+    linkedin: 'https://www.linkedin.com/in/ravindumedagama',
+    x: 'https://x.com/RavinduMedagama',
+    behance: 'https://www.behance.net'
 };
 
 export const STATS = [
@@ -36,6 +36,8 @@ export const NAV_LINKS = [
 { id: 'about', label: 'About' },
 { id: 'skills', label: 'Skills' },
 { id: 'projects', label: 'Projects' },
-{ id: 'services', label: 'Services' },
+{ id: 'journey', label: 'Achievements' },
+// { id: 'services', label: 'Services' },
+{ id: 'testimonials', label: 'Testimonials' },
 { id: 'contact', label: 'Contact' }
 ];

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Github, Linkedin, Twitter, Dribbble, Mail, MapPin, Heart, Plane } from 'lucide-react';
+import { Github, Linkedin, Twitter, Mail, MapPin, Heart } from 'lucide-react';
+import { SiBehance, SiX } from 'react-icons/si';
 import { PERSONAL_INFO, SOCIAL_LINKS, NAV_LINKS } from '../../utils/constants';
 import { scrollToSection } from '../../hooks/useScrollSpy';
 import FadeIn from '../animations/FadeIn';
@@ -9,8 +10,8 @@ const Footer = () => {
     const socialIcons = {
         github: Github,
         linkedin: Linkedin,
-        twitter: Twitter,
-        dribbble: Dribbble,
+        x: SiX,
+        behance: SiBehance,
     }
   return (
     <footer className="relative bg-black overflow-hidden border-t border-white/10">
@@ -24,7 +25,7 @@ const Footer = () => {
                 <FadeIn delay={0}>
                     <div>
                         <h3 className="text-3xl font-bold bg-linear-to-r from-primary/80 via-primary to-primary/80 bg-clip-text text-transparent mb-4">
-                            {PERSONAL_INFO.name.split(' ')[0]}
+                            {PERSONAL_INFO.name}
                         </h3>
                         <p className="text-white/60 text-sm mb-6 leading-relaxed">
                             {PERSONAL_INFO.tagline}
@@ -43,7 +44,7 @@ const Footer = () => {
                                 </span>
                             </a>
 
-                            <div className="flex items-centergap-3 p-3 bg-white/5 border border-white/10 rounded-xl">
+                            <div className="flex items-center gap-3 p-3 bg-white/5 border border-white/10 rounded-xl">
                                 <div className="p-2 bg-primary/10 rounded-lg">
                                     <MapPin className="w-4 h-4 text-primary" />
                                 </div>

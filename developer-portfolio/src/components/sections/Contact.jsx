@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
-import {Mail, MapPin, Github, Linkedin, Twitter, Send, MessageSquare, Icon} from 'lucide-react';
+import {Mail, MapPin, Github, Linkedin, MessageSquare} from 'lucide-react';
+import { SiBehance, SiX } from "react-icons/si";
 import { PERSONAL_INFO, SOCIAL_LINKS} from '../../utils/constants';
 import FadeIn from '../animations/FadeIn'
 
@@ -42,7 +43,8 @@ const Contact = () => {
     const socialIcons = {
         github: Github,
         linkedin: Linkedin,
-        twitter: Twitter
+        x: SiX,
+        behance: SiBehance,
     };
 
   return (
@@ -193,7 +195,7 @@ const Contact = () => {
                         <div>
                             <p className="text-sm text-white/60 mb-4">Connect with me</p>
                             <div className="flex gap-4">
-                                {Object.entries(SOCIAL_LINKS).slice(0, 3).map(([platform, url]) => {
+                                {Object.entries(SOCIAL_LINKS).slice(0, 4).map(([platform, url]) => {
                                     const Icon = socialIcons[platform];
                                     return Icon ? (
                                         <a

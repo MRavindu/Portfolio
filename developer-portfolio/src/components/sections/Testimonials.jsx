@@ -30,9 +30,9 @@ const Testimonials = () => {
   };
 
   const testimonialStats = [
-    { value: "3x", label: "Faster Delivery" },
-    { value: "95%", label: "Client Satisfaction" },
     { value: "100%", label: "On-Time Delivery" },
+    { value: "90%", label: "Quality Satisfaction" },
+    { value: "2x", label: "Quality Assurance" },
     { value: "5*", label: "Average Rating" },
   ];
 
@@ -47,14 +47,15 @@ const Testimonials = () => {
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/60 rounded-full mb-6">
               <Quote className="w-4 h-4 text-primary" />
-              <span className="text-sm text-primary font-medium tracking-wider uppercase">Testimonials</span>
+              <span className="text-sm text-primary font-medium tracking-wider uppercase">
+                Testimonials
+              </span>
             </div>
             <h2 className="text-4xl lg:text-5xl font-normal text-white mb-4 max-w-xl mx-auto">
-                Trusted by forward-thinking teams
-                </h2>
+              Trusted by Leading Professionals
+            </h2>
             <p className="text-lg text-white/60 max-w-xl mx-auto">
-              Empoering clients with design-driven, high-quality solutions built
-              for success
+              Transforming ideas into precise, innovative software Solutions & designs
             </p>
           </div>
         </FadeIn>
@@ -105,24 +106,62 @@ const Testimonials = () => {
                           <div className="mb-6">
                             <Quote className="w-7 h-7 text-primary mb-4 opacity-50" />
                             <p className="text-lg md:text-xl text-white leading-relaxed">
-                                "{testimonial.quote}"
+                              "{testimonial.quote}"
                             </p>
                           </div>
 
                           <div className="flex items-center justify-between">
                             <div>
-                                <div className="text-white font-medium mb-1">
-                                    {testimonial.name}
-                                </div>
-                                <div className="text-white/60 text-sm">
-                                    {testimonial.role}, {testimonial.company}
-                                </div>
+                              <div className="text-white font-medium mb-1">
+                                {testimonial.name}
+                              </div>
+                              <div className="text-white/60 text-sm">
+                                {testimonial.role}, {testimonial.company}
+                              </div>
                             </div>
 
+                            {/* Star Ratings */}
                             <div className="flex gap-1">
-                              {[...Array(testimonial.rating)].map((_, i) => (
-                                <Star key={i} className="w-4 h-4 fill-primary text-primary" />
-                              ))}
+                              {Array.from({ length: 5 }).map((_, i) => {
+                                if (testimonial.rating >= i + 1) {
+                                  // Full star
+                                  return (
+                                    <Star
+                                      key={i}
+                                      className="w-4 h-4 fill-primary text-primary"
+                                    />
+                                  );
+                                } else if (testimonial.rating > i && testimonial.rating < i + 1) {
+                                  // Half star
+                                  return (
+                                    <Star
+                                      key={i}
+                                      className="w-4 h-4 text-primary"
+                                      style={{
+                                        fill: "url(#half-gradient)",
+                                      }}
+                                    />
+                                  );
+                                } else {
+                                  // Empty star
+                                  return (
+                                    <Star
+                                      key={i}
+                                      className="w-4 h-4 text-white/30"
+                                    />
+                                  );
+                                }
+                              })}
+
+                              {/* Half star gradient definition */}
+                              <svg width="0" height="0">
+                                <defs>
+                                  <linearGradient id="half-gradient">
+                                    <stop offset="50%" stopColor="#ff922b" /> {/* primary color */}
+                                    <stop offset="50%" stopColor="transparent" />
+                                  </linearGradient>
+                                </defs>
+                              </svg>
                             </div>
                           </div>
                         </div>
