@@ -30,8 +30,8 @@ const Testimonials = () => {
   };
 
   const testimonialStats = [
-    { value: "100%", label: "On-Time Delivery" },
-    { value: "90%", label: "Quality Satisfaction" },
+    { value: "99%", label: "On-Time Delivery" },
+    { value: "95%", label: "Quality Satisfaction" },
     { value: "2x", label: "Quality Assurance" },
     { value: "5*", label: "Average Rating" },
   ];

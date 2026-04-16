@@ -79,13 +79,13 @@ export const skills = [
 
   // -------------OTHER SKILLS FOR SKILLS COMPONENT-------------
   //  -------------START OF SKILLS GRID-------------
-  {
-    id: 11,
-    name: "HTML",
-    icon: SiHtml5,
-    level: "Expert",
-    experience: "6+ years"
-  },
+  // {
+  //   id: 11,
+  //   name: "HTML",
+  //   icon: SiHtml5,
+  //   level: "Expert",
+  //   experience: "6+ years"
+  // },
   {
     id: 12,
     name: "JavaScript",
@@ -116,13 +116,13 @@ export const skills = [
     level: "Advanced",
     experience: "4+ years"
   },
-  {
-    id: 16,
-    name: "PHP",
-    icon: SiPhp,
-    level: "Intermediate",
-    experience: "4+ years"
-  },
+  // {
+  //   id: 16,
+  //   name: "PHP",
+  //   icon: SiPhp,
+  //   level: "Intermediate",
+  //   experience: "4+ years"
+  // },
   {
     id: 17,
     name: "Java",

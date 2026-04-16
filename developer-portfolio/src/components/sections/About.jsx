@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
-import { Download, Code2, Sparkles, Webhook } from 'lucide-react';
-import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiNodedotjs, SiMongodb} from 'react-icons/si';
+import { Download, Code2, Sparkles, Webhook, GraduationCap, Handshake, BrainCircuit } from 'lucide-react';
 import { PERSONAL_INFO, ABOUT_STATS } from '../../utils/constants';
 import FadeIn from '../animations/FadeIn';
 import RadialGradientBackground from '../backgrounds/RadialGradientBackground';
 import { skills } from '../../data/skills';
+import { BsPeople } from 'react-icons/bs';
 
 
 const About = () => {
@@ -92,12 +91,13 @@ const About = () => {
                                 <div className="relative bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-primary/30 transition-all duration-300">
                                     <div className="flex items-start gap-4">
                                         <div className="p-3 bg-primary/10 rounded-xl">
-                                            <Code2 className="w-6 h-6 text-primary" />
+                                            <GraduationCap className="w-6 h-6 text-primary" />
                                         </div>
                                         <div className="flex-1">
                                             <h3 className="text-lg font-semibold text-white mb-2">Experience</h3>
                                             <p className="text-sm text-white/70 leading-relaxed">
-                                                Through my academic journey and professional training, I have gained experience in: Designing responsive and accessible UI components, Building scalable frontend architectures, Writing maintainable and testable code and Collaborating using Agile workflows and Git-based development
+                                                With 2+ years of industry experience in Project Management, I bring a unique blend of technical learning and real-world execution into my journey as a developer.
+                                                I thrive in fast-paced environments, adapt quickly, and am driven to continuously learn while delivering meaningful contributions.
                                             </p>
                                         </div>
                                     </div>
@@ -108,11 +108,11 @@ const About = () => {
                                 <div className="absolute inset-0 bg-linear-to-br from-primary/10 to-primary/5 rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
                                 <div className="relative bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-primary/30 transition-all duration-300 h-full">
                                     <div className="p-3 bg-primary/10 rounded-xl w-fit mb-4">
-                                        <Sparkles className="w-5 h-5 text-primary" />
+                                        <BrainCircuit className="w-5 h-5 text-primary" />
                                     </div>
-                                    <h3 className="text-lg font-semibold text-white mb-2">Clean Code</h3>
+                                    <h3 className="text-lg font-semibold text-white mb-2">Problem Solving</h3>
                                     <p className="text-sm text-white/70 leading-relaxed">
-                                        Writing maintainable, scalable, and well-structured code following software engineering best practices.
+                                        Breaking down complex requirements into practical, efficient technical solutions with a focus on usability and performance.
                                     </p>
                                 </div>
                             </div>
@@ -121,11 +121,11 @@ const About = () => {
                                 <div className="absolute inset-0 bg-linear-to-br from-primary/10 to-primary/5 rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
                                 <div className="relative bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-primary/30 transition-all duration-300 h-full">
                                     <div className="p-3 bg-primary/10 rounded-xl w-fit mb-4">
-                                        <Download className="w-5 h-5 text-primary" />
+                                        <BsPeople className="w-5 h-5 text-primary" />
                                     </div>
-                                    <h3 className="text-lg font-semibold text-white mb-2">Performance</h3>
+                                    <h3 className="text-lg font-semibold text-white mb-2">Team Work</h3>
                                     <p className="text-sm text-white/70 leading-relaxed">
-                                        Improving application speed and efficiency through efficient rendering, lazy loading, and optimization techniques.
+                                        Working effectively within cross-functional teams, with clear understanding about the gap between technical implementation and business requirements.
                                     </p>
                                 </div>
                             </div>
@@ -135,11 +135,11 @@ const About = () => {
                                 <div className="relative bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-primary/30 transition-all duration-300">
                                     
                                     <div className="p-3 bg-primary/10 rounded-xl w-fit mb-4">
-                                        <Webhook className="w-5 h-5 text-primary" />
+                                        <Handshake className="w-5 h-5 text-primary" />
                                     </div>
-                                    <h3 className="text-lg font-semibold text-white mb-2">Backend Integration</h3>
+                                    <h3 className="text-lg font-semibold text-white mb-2">API Integration</h3>
                                     <p className="text-sm text-white/70 leading-relaxed">
-                                        Building and integrating RESTful APIs using Spring Boot and modern backend architecture mechanisms.
+                                        Integrating frontend applications with RESTful APIs to build dynamic, data-driven user experiences.
                                     </p>
                                     {/* <div className="grid grid-cols-3 gap-6 text-center">
                                         <div>

@@ -64,7 +64,7 @@ const ProjectCard = ({project}) => {
 
         <div className="p-6 space-y-4">
           <div>
-            <h3 className="text-xl font-semibold text-white mb-2 group-hover:text-[#A8ff8D] transition-colors duration-300">
+            <h3 className="text-xl font-semibold text-white mb-2 group-hover:text-primary transition-colors duration-300">
               {title}
             </h3>
             <p className="text-white/70 text-sm leading-relaxed line-clamp-2">
@@ -85,8 +85,8 @@ const ProjectCard = ({project}) => {
 
           {metrics && (
             <div className="flex items-center gap-2 pt-3 border-t border-white/10 ">
-              <TrendingUp className="w-4 h-4 text-green-400" />
-              <p className="text-sm font-medium text-green-400">{metrics}</p>
+              {/* <TrendingUp className="w-4 h-4 text-yellow-400" /> */}
+              <p className="text-sm font-medium text-yellow-400">{metrics}</p>
             </div>
           )}
 

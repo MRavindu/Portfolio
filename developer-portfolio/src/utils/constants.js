@@ -27,7 +27,7 @@ export const STATS = [
 ];
 
 export const ABOUT_STATS = [
-{ label: 'Academic Projects', value: '3+' },
+{ label: 'Individual Projects', value: '3+' },
 { label: 'Technologies & Tools', value: '10+' },
 { label: 'Coding Hours', value: '2000+' }
 ];
