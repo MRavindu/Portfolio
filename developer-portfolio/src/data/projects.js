@@ -55,8 +55,8 @@ export const projects = [
         category: 'Static Website',
         technologies: ['React', 'TypeScript', 'Bootstrap'],
         metrics: 'Improved content discovery and retention via structured navigation and grids.',
-        demoUrl: 'https://abc.com',
-        githubUrl: 'https://github.com',
+        demoUrl: 'https://mravindu.github.io/GameSite',
+        githubUrl: 'https://github.com/MRavindu/GameSite',
     },
 
     // {
@@ -91,8 +91,8 @@ export const projects = [
         category: 'MiniApps',
         technologies: ['python'],
         metrics: '40% increase in conversion',
-        demoUrl: 'https://abc.com',
-        figmaUrl: 'https://github.com',
+        // demoUrl: 'https://abc.com',
+        githubUrl: 'https://github.com',
     },
 ];
 

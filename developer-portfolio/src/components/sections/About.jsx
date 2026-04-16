@@ -5,34 +5,34 @@ import RadialGradientBackground from '../backgrounds/RadialGradientBackground';
 import { skills } from '../../data/skills';
 import { BsPeople } from 'react-icons/bs';
 
-
 const About = () => {
-    // Skills
-    // const Jkills = [
-    //     { name: 'React.js', icon: SiReact, color: '#61DAFB' },
-    //     { name: 'Next.js', icon: SiNextdotjs, color: '#000000' },
-    //     { name: 'TypeScript', icon: SiTypescript, color: '#3178C6' },
-    //     { name: 'Tailwind CSS', icon: SiTailwindcss, color: '#06B6D4' },
-    //     { name: 'Node.js', icon: SiNodedotjs, color: '#339933' },
-    //     { name: 'MongoDB', icon: SiMongodb, color: '#47A248' },
-    // ];
 
+    const enhancedBio = [
+        "I’m a software engineer applicant currently pursuing a Master of Computer Science Degree program, where I am actively learning about Database Systems, Data Structures, Operating Systems, etc.",
+        "The experience I hava as a Software Project Manager shaped how I approach engineering practices today. I not just write code, but build scalable, maintainable solutions that align with real product and business outcomes.",
+        "I now focus on frontend and full-stack development using React, JavaScript/TypeScript, Spring Boot, and RESTful APIs, with an emphasis on clean architecture, performance, and system design thinking.",
+        "I’m actively seeking Associate Software Engineer or Associate Full-Stack Developer roles where I can contribute to industrial production systems while growing in a fast-paced engineering environment."
+    ];
 
     return (
         <section id="about" className="relative py-20 bg-black overflow-hidden">
             <RadialGradientBackground variant="about" />
 
             <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
                 {/* Main Grid */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
-                    {/* Left Column - Content */}
+
+                    {/* Left Column */}
                     <div className="flex flex-col gap-12">
+
                         <div className="flex flex-col gap-8">
+
                             <FadeIn delay={60}>
                                 <div className="inline-flex items-center gap-2.5 px-5 py-2.5 border border-primary/30 bg-primary/10 rounded-full w-fit">
                                     <Code2 className="w-4 h-4 text-primary" />
                                     <span className="text-sm text-primary font-medium">
-                                        Frontend / Full-Stack Web Developer
+                                        Frontend / Full-Stack Software Engineer
                                     </span>
                                     <Sparkles className="w-4 h-4 text-primary" />
                                 </div>
@@ -40,19 +40,20 @@ const About = () => {
 
                             <FadeIn delay={100}>
                                 <h2 className="text-4xl lg:text-5xl font-normal text-white leading-tight">
-                                    Crafting Modern Web Experiences That Scale
+                                    Engineering with Product Thinking and Execution Focus
                                 </h2>
                             </FadeIn>
 
                             <FadeIn delay={200}>
                                 <div className="flex flex-col gap-4">
-                                    {PERSONAL_INFO.bio.map((paragraph, index) => (
+                                    {enhancedBio.map((paragraph, index) => (
                                         <p key={index} className="text-base text-white/70 leading-relaxed">
                                             {paragraph}
                                         </p>
                                     ))}
                                 </div>
                             </FadeIn>
+
                         </div>
 
                         <FadeIn delay={300}>
@@ -80,88 +81,106 @@ const About = () => {
                                 Download Resume
                             </button>
                         </FadeIn>
+
                     </div>
 
-                    {/* Right Column - Info Grid */}
+                    {/* Right Column */}
                     <FadeIn delay={200}>
                         <div className="grid grid-cols-2 gap-4">
 
+                            {/* Experience */}
                             <div className="col-span-2 relative gap-4">
-                                <div className="absolute inset-0 bg-linear-to-br from-primary/10 to-primary/5 rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
+                                <div className="absolute inset-0 bg-linear-to-br from-primary/10 to-primary/5 rounded-2xl blur-xl opacity-50"></div>
+
                                 <div className="relative bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-primary/30 transition-all duration-300">
+
                                     <div className="flex items-start gap-4">
                                         <div className="p-3 bg-primary/10 rounded-xl">
                                             <GraduationCap className="w-6 h-6 text-primary" />
                                         </div>
+
                                         <div className="flex-1">
-                                            <h3 className="text-lg font-semibold text-white mb-2">Experience</h3>
+                                            <h3 className="text-lg font-semibold text-white mb-2">
+                                                Experience
+                                            </h3>
+
                                             <p className="text-sm text-white/70 leading-relaxed">
-                                                With 2+ years of industry experience in Project Management, I bring a unique blend of technical learning and real-world execution into my journey as a developer.
-                                                I thrive in fast-paced environments, adapt quickly, and am driven to continuously learn while delivering meaningful contributions.
+                                                2+ years in software Project Management within Agile delivery environments, where I coordinated cross-functional teams, translated requirements into execution plans, and ensured on-time delivery of production systems.
+                                                <br /><br />
+                                                This foundation now strengthens my transition into software engineering — giving me a strong understanding of system constraints, product requirements, and real-world delivery expectations.
                                             </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
+                            {/* Problem Solving */}
                             <div className="relative group">
-                                <div className="absolute inset-0 bg-linear-to-br from-primary/10 to-primary/5 rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
+                                <div className="absolute inset-0 bg-linear-to-br from-primary/10 to-primary/5 rounded-2xl blur-xl opacity-50"></div>
+
                                 <div className="relative bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-primary/30 transition-all duration-300 h-full">
+
                                     <div className="p-3 bg-primary/10 rounded-xl w-fit mb-4">
                                         <BrainCircuit className="w-5 h-5 text-primary" />
                                     </div>
-                                    <h3 className="text-lg font-semibold text-white mb-2">Problem Solving</h3>
+
+                                    <h3 className="text-lg font-semibold text-white mb-2">
+                                        Problem Solving
+                                    </h3>
+
                                     <p className="text-sm text-white/70 leading-relaxed">
-                                        Breaking down complex requirements into practical, efficient technical solutions with a focus on usability and performance.
+                                        Breaking down complex product requirements into scalable, maintainable engineering solutions with a focus on usability, performance, and system design clarity.
                                     </p>
                                 </div>
                             </div>
 
+                            {/* Team Work */}
                             <div className="relative group">
-                                <div className="absolute inset-0 bg-linear-to-br from-primary/10 to-primary/5 rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
+                                <div className="absolute inset-0 bg-linear-to-br from-primary/10 to-primary/5 rounded-2xl blur-xl opacity-50"></div>
+
                                 <div className="relative bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-primary/30 transition-all duration-300 h-full">
+
                                     <div className="p-3 bg-primary/10 rounded-xl w-fit mb-4">
                                         <BsPeople className="w-5 h-5 text-primary" />
                                     </div>
-                                    <h3 className="text-lg font-semibold text-white mb-2">Team Work</h3>
+
+                                    <h3 className="text-lg font-semibold text-white mb-2">
+                                        Collaboration
+                                    </h3>
+
                                     <p className="text-sm text-white/70 leading-relaxed">
-                                        Working effectively within cross-functional teams, with clear understanding about the gap between technical implementation and business requirements.
+                                        Experienced in cross-functional team environments, bridging communication between technical implementation and business requirements to ensure alignment and delivery efficiency.
                                     </p>
                                 </div>
                             </div>
 
+                            {/* API Integration */}
                             <div className="col-span-2 relative group">
-                                <div className="absolute inset-0 bg-linear-to-br from-primary/10 to-primary/5 rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
+
+                                <div className="absolute inset-0 bg-linear-to-br from-primary/10 to-primary/5 rounded-2xl blur-xl opacity-50"></div>
+
                                 <div className="relative bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-primary/30 transition-all duration-300">
-                                    
+
                                     <div className="p-3 bg-primary/10 rounded-xl w-fit mb-4">
                                         <Handshake className="w-5 h-5 text-primary" />
                                     </div>
-                                    <h3 className="text-lg font-semibold text-white mb-2">API Integration</h3>
+
+                                    <h3 className="text-lg font-semibold text-white mb-2">
+                                        API & System Integration
+                                    </h3>
+
                                     <p className="text-sm text-white/70 leading-relaxed">
-                                        Integrating frontend applications with RESTful APIs to build dynamic, data-driven user experiences.
+                                        Integrating frontend applications with RESTful APIs, managing data flow, authentication patterns, and dynamic state handling to build responsive and data-driven web applications.
                                     </p>
-                                    {/* <div className="grid grid-cols-3 gap-6 text-center">
-                                        <div>
-                                            <div className="text-2xl font-bold text-primary mb-1">100%</div>
-                                            <div className="text-xs text-white/60">Client Satisfaction</div>
-                                        </div>
-                                        <div>
-                                            <div className="text-2xl font-bold text-primary mb-1">24/7</div>
-                                            <div className="text-xs text-white/60">Support Available</div>
-                                        </div>
-                                        <div>
-                                            <div className="text-2xl font-bold text-primary mb-1">Fast</div>
-                                            <div className="text-xs text-white/60">Delivery Time</div>
-                                        </div>
-                                    </div> */}
+
                                 </div>
                             </div>
+
                         </div>
                     </FadeIn>
                 </div>
 
-                {/* Skills Grid Section */}
+                {/* Skills Section (unchanged) */}
                 <FadeIn delay={500}>
                     <div className="flex flex-col items-center gap-8">
                         <div className="text-center">
@@ -172,6 +191,7 @@ const About = () => {
                                 Technologies and tools I use to design and develop modern web applications.
                             </p>
                         </div>
+
                         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 w-full max-w-4xl">
                             {skills.slice(0, 10).map((skill, index) => (
                                 <div
@@ -182,9 +202,6 @@ const About = () => {
                                     <div className="text-sm text-white/80 font-medium text-center">
                                         {skill.name}
                                     </div>
-
-                                    {/* Hover Glow Effect */}
-                                    <div className="absolute inset-0 bg-linear-to-br from-primary/0 to-primary/0 group-hover:from-primary/10 group-hover:to-primary/10 rounded-2xl transition-all duration-300"></div>
                                 </div>
                             ))}
                         </div>
@@ -193,14 +210,7 @@ const About = () => {
 
             </div>
         </section>
-    )
-}
+    );
+};
 
-    
-
-
-
-
-
-
-export default About
+export default About;

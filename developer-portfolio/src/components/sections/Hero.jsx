@@ -34,8 +34,8 @@ const Hero = () => {
             </FadeIn>
 
             <FadeIn delay={200}>
-              <p className="text-lg text-white/70 max-w-[550px] mb-8">
-                Building scalable, performance optimized web applications with React, TypeScript, and Spring Boot.
+              <p className="text-lg text-white/70 max-w-137.5 mb-8">
+                From Project Management to Software Engineering. Building scalable systems that bridge product vision and technical execution.
               </p>
             </FadeIn>
 

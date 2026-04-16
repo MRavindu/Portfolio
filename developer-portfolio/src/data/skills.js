@@ -9,28 +9,28 @@ export const skills = [
     name: "React.js",
     icon: SiReact,
     level: "Intermediate",
-    experience: "2+ years"
+    experience: "02+ Years"
   },
   {
     id: 2,
     name: "Next.js",
     icon: SiNextdotjs,
     level: "Intermediate",
-    experience: "6+ Months"
+    experience: "06+ Months"
   },
   {
     id: 3,
     name: "Tailwind CSS",
     icon: SiTailwindcss,
     level: "Intermediate",
-    experience: "1+ years"
+    experience: "01+ Years"
   },
   {
     id: 4,
     name: "TypeScript",
     icon: SiTypescript,
     level: "Beginner",
-    experience: "1+ years"
+    experience: "01+ Years"
   },
   
   {
@@ -38,42 +38,42 @@ export const skills = [
     name: "Spring Boot",
     icon: SiSpringboot,
     level: "Intermediate",
-    experience: "1+ years"
+    experience: "01+ Years"
   },
   {
     id: 6,
     name: "Python",
     icon: SiPython,
     level: "Beginner",
-    experience: "1+ years"
+    experience: "01+ years"
   },
   {
     id: 7,
     name: ".NET",
     icon: DiDotnet,
     level: "Beginner",
-    experience: "6+ Months"
+    experience: "06+ Months"
   },
   {
     id: 8,
     name: "MySQL",
     icon: DiMysql,
     level: "Advanced",
-    experience: "3+ years"
+    experience: "03+ Years"
   },
   {
     id: 9,
     name: "Git & GitHub",
     icon: SiGithub,
     level: "Intermediate",
-    experience: "2+ years"
+    experience: "02+ Years"
   },
   {
     id: 10,
     name: "Postman",
     icon: SiPostman,
     level: "Intermediate",
-    experience: "1+ years"
+    experience: "01+ Years"
   },
   // -------------END OF SKILLS GRID-------------
 
@@ -84,29 +84,29 @@ export const skills = [
   //   name: "HTML",
   //   icon: SiHtml5,
   //   level: "Expert",
-  //   experience: "6+ years"
+  //   experience: "06+ Years"
   // },
   {
     id: 12,
     name: "JavaScript",
     icon: SiJavascript,
     level: "Intermediate",
-    experience: "3+ years"
+    experience: "02+ Years"
   },
   {
     id: 13,
     name: "Bootstrap",
     icon: SiIntellijidea,
     level: "Beginner",
-    experience: "6+ Months"
+    experience: "06+ Months"
   },
-  {
-    id: 14,
-    name: "Redux",
-    icon: SiIntellijidea,
-    level: "Beginner",
-    experience: "6+ Months"
-  },
+  // {
+  //   id: 14,
+  //   name: "Redux",
+  //   icon: SiIntellijidea,
+  //   level: "Beginner",
+  //   experience: "06+ Months"
+  // },
   // -------------END OF FE-SKILLS-------------
   // -------------START OF BE-SKILLS-------------
   {
@@ -114,28 +114,28 @@ export const skills = [
     name: "MySQL",
     icon: SiMysql,
     level: "Advanced",
-    experience: "4+ years"
+    experience: "02+ Years"
   },
   // {
   //   id: 16,
   //   name: "PHP",
   //   icon: SiPhp,
   //   level: "Intermediate",
-  //   experience: "4+ years"
+  //   experience: "04+ Years"
   // },
   {
     id: 17,
     name: "Java",
     icon: DiJava,
     level: "Beginner",
-    experience: "4+ years"
+    experience: "06+ Months"
   },
   {
     id: 18,
     name: "MongoDB",
     icon: SiMongodb,
     level: "Beginner",
-    experience: "4+ years"
+    experience: "06+ Months"
   },
   //  -------------END OF BE-SKILLS-------------
   //  -------------START OF TOOLS-------------
@@ -143,28 +143,28 @@ export const skills = [
     id: 19,
     name: "Figma",
     icon: SiFigma,
-    level: "Advanced",
-    experience: "4+ years"
+    level: "Expert",
+    experience: "04+ Years"
   },
   {
     id: 20,
     name: "Jira",
     icon: SiJira,
     level: "Intermediate",
-    experience: "2+ years"
+    experience: "02+ Years"
   },
-  {
-    id: 21,
-    name: "Wordpress",
-    icon: SiWordpress,
-    level: "Beginner",
-    experience: "6+ Months"
-  },
+  // {
+  //   id: 21,
+  //   name: "Wordpress",
+  //   icon: SiWordpress,
+  //   level: "Beginner",
+  //   experience: "06+ Months"
+  // },
   {
     id: 22,
     name: "IntelliJ IDEA",
     icon: SiIntellijidea,
     level: "Intermediate",
-    experience: "1+ years"
+    experience: "01+ Years"
   }
 ];
