@@ -1,6 +1,6 @@
-import { DiDotnet, DiVisualstudio, DiJava } from "react-icons/di";
+import { DiDotnet, DiMysql, DiJava } from "react-icons/di";
 
-import { SiReact, SiAngular, SiTypescript, SiPython, SiTailwindcss, SiSpringboot, SiIntellijidea, SiGithub, SiPostman, SiWordpress, SiJira, SiFigma, SiHtml5, SiJavascript, SiPhp, SiMysql, SiMongodb } from "react-icons/si";
+import { SiReact, SiNextdotjs, SiTypescript, SiPython, SiTailwindcss, SiSpringboot, SiIntellijidea, SiGithub, SiPostman, SiWordpress, SiJira, SiFigma, SiHtml5, SiJavascript, SiPhp, SiMysql, SiMongodb } from "react-icons/si";
 
 export const skills = [
   // -------------START OF SKILLS GRID-------------
@@ -13,10 +13,10 @@ export const skills = [
   },
   {
     id: 2,
-    name: "Angular.js",
-    icon: SiAngular,
+    name: "Next.js",
+    icon: SiNextdotjs,
     level: "Intermediate",
-    experience: "1+ years"
+    experience: "6+ Months"
   },
   {
     id: 3,
@@ -56,8 +56,8 @@ export const skills = [
   },
   {
     id: 8,
-    name: "VS Code",
-    icon: DiVisualstudio,
+    name: "MySQL",
+    icon: DiMysql,
     level: "Advanced",
     experience: "3+ years"
   },

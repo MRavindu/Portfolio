@@ -33,7 +33,7 @@ const About = () => {
                                 <div className="inline-flex items-center gap-2.5 px-5 py-2.5 border border-primary/30 bg-primary/10 rounded-full w-fit">
                                     <Code2 className="w-4 h-4 text-primary" />
                                     <span className="text-sm text-primary font-medium">
-                                        Frontend / Full-Stack Software Engineer
+                                        Frontend / Full-Stack Web Developer
                                     </span>
                                     <Sparkles className="w-4 h-4 text-primary" />
                                 </div>
@@ -95,7 +95,7 @@ const About = () => {
                                             <Code2 className="w-6 h-6 text-primary" />
                                         </div>
                                         <div className="flex-1">
-                                            <h3 className="text-lg font-semibold text-white mb-2">Expertise</h3>
+                                            <h3 className="text-lg font-semibold text-white mb-2">Experience</h3>
                                             <p className="text-sm text-white/70 leading-relaxed">
                                                 Through my academic journey and professional training, I have gained experience in: Designing responsive and accessible UI components, Building scalable frontend architectures, Writing maintainable and testable code and Collaborating using Agile workflows and Git-based development
                                             </p>

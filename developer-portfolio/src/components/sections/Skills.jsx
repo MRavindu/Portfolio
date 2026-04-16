@@ -10,6 +10,7 @@ const Skills = () => {
             skills.find(s => s.name === 'HTML'),
             skills.find(s => s.name === 'JavaScript'),
             skills.find(s => s.name === 'React.js'),
+            skills.find(s => s.name === 'Next.js'),
             skills.find(s => s.name === 'Angular.js'),
             skills.find(s => s.name === 'Tailwind CSS'),
             skills.find(s => s.name === 'Bootstrap'),
