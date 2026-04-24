@@ -39,7 +39,7 @@ export const projects = [
         id: 4,
         title: 'Phillips Pharmacy Staff Portal',
         description: 'Full-stack pharmacy portal for inventory, orders, and workflow management.',
-        image: `${import.meta.env.BASE_URL}images/projects/project.png`,
+        image: `${import.meta.env.BASE_URL}images/projects/PharmacyStaff.png`,
         category: 'Full Stack',
         technologies: ['React Js', 'Spring Boot', 'Java', 'MySQL'],
         metrics: 'Improved overall operational efficiency through optimized UI workflows',
@@ -49,6 +49,18 @@ export const projects = [
 
     {
         id: 5,
+        title: 'Phoenix Job Application Tracker',
+        description: 'A job application tracker web app with user-friendly interface and easy to use drag-and-drop task functionality.',
+        image: `${import.meta.env.BASE_URL}images/projects/PhoenixJobTracker.jpeg`,
+        category: 'Full Stack',
+        technologies: ['Next.js', 'TypeScript', 'MongoDB', 'Vercel'],
+        metrics: 'Easier job application management and intuitive UI and drag-and-drop features.',
+        demoUrl: 'https://phoenixtracker.vercel.app/',
+        githubUrl: 'https://github.com/MRavindu/job-application-tracker',
+    },
+
+    {
+        id: 6,
         title: 'Phoenix Game Listing WebApp',
         description: 'Interactive gaming dashboard with filtering, discovery, and dark-themed interface.',
         image: `${import.meta.env.BASE_URL}images/projects/GameListing.jpeg`,
@@ -59,17 +71,17 @@ export const projects = [
         githubUrl: 'https://github.com/MRavindu/GameSite',
     },
 
-    // {
-    //     id: 6,
-    //     title: 'E-Commerce Platform',
-    //     description: 'Full-stack onlie shopping application with real-time inventory management, secure payment',
-    //     image: '/images/projects/project.png',
-    //     category: 'UI Designs',
-    //     technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-    //     metrics: '40% increase in conversion',
-    //     demoUrl: 'https://abc.com',
-    //     figmaUrl: 'https://github.com',
-    // },
+    {
+        id: 7,
+        title: 'Personal Portfolio Website',
+        description: 'A responsive personal portfolio website showcasing projects, skills, and contact information.',
+        image: `${import.meta.env.BASE_URL}images/projects/Portfolio.jpeg`,
+        category: 'Static Website',
+        technologies: ['React', 'Tailwind CSS', 'JavaScript'],
+        metrics: 'Better showcase of projects and skills with improved user experience and visual appeal.',
+        demoUrl: 'https://mravindu.github.io/Portfolio/',
+        githubUrl: 'https://github.com/MRavindu/Portfolio',
+    },
 
     // {
     //     id: 7,
