@@ -13,26 +13,26 @@ export const projects = [
 
     {
         id: 2,
-        title: 'Odyssey Oasis Tour Booking Portal',
-        description: 'Modern travel landing page with immersive visuals and booking-focused user experience.',
-        image: `${import.meta.env.BASE_URL}images/projects/OdysseyLanding.png`,
-        category: 'UI Designs',
-        technologies: ['Figma'],
-        metrics: 'Improved visual structure to organize content and interactive UI elements.',
-        demoUrl: 'https://abc.com',
-        figmaUrl: 'https://github.com/MRavindu/Phillips-Pharmacy',
+        title: 'Phoenix Job Application Tracker',
+        description: 'A job application tracker web app with user-friendly interface and easy to use drag-and-drop task functionality.',
+        image: `${import.meta.env.BASE_URL}images/projects/PhoenixJobTracker.jpeg`,
+        category: 'Full Stack',
+        technologies: ['Next.js', 'TypeScript', 'MongoDB', 'Vercel'],
+        metrics: 'Easier job application management and intuitive UI and drag-and-drop features.',
+        demoUrl: 'https://phoenixtracker.vercel.app/',
+        githubUrl: 'https://github.com/MRavindu/job-application-tracker',
     },
 
     {
         id: 3,
-        title: 'Express Mobile-Store UI Design',
-        description: 'Conversion-focused e-commerce UI with structured layout and clear calls-to-action.',
-        image: `${import.meta.env.BASE_URL}images/projects/MobileLanding.png`,
-        category: 'UI Designs',
-        technologies: ['Figma'],
-        metrics: 'Improved product discoverability and user interaction via optimized layout.',
-        demoUrl: 'https://abc.com',
-        figmaUrl: 'https://github.com',
+        title: 'Personal Portfolio Website',
+        description: 'A responsive personal portfolio website showcasing projects, skills, and contact information.',
+        image: `${import.meta.env.BASE_URL}images/projects/Portfolio.jpeg`,
+        category: 'Static Website',
+        technologies: ['React', 'Tailwind CSS', 'JavaScript'],
+        metrics: 'Better showcase of projects and skills with improved user experience and visual appeal.',
+        demoUrl: 'https://mravindu.github.io/Portfolio/',
+        githubUrl: 'https://github.com/MRavindu/Portfolio',
     },
 
     {
@@ -49,14 +49,14 @@ export const projects = [
 
     {
         id: 5,
-        title: 'Phoenix Job Application Tracker',
-        description: 'A job application tracker web app with user-friendly interface and easy to use drag-and-drop task functionality.',
-        image: `${import.meta.env.BASE_URL}images/projects/PhoenixJobTracker.jpeg`,
-        category: 'Full Stack',
-        technologies: ['Next.js', 'TypeScript', 'MongoDB', 'Vercel'],
-        metrics: 'Easier job application management and intuitive UI and drag-and-drop features.',
-        demoUrl: 'https://phoenixtracker.vercel.app/',
-        githubUrl: 'https://github.com/MRavindu/job-application-tracker',
+        title: 'Odyssey Oasis Tour Booking Portal',
+        description: 'Modern travel landing page with immersive visuals and booking-focused user experience.',
+        image: `${import.meta.env.BASE_URL}images/projects/OdysseyLanding.png`,
+        category: 'UI Designs',
+        technologies: ['Figma'],
+        metrics: 'Improved visual structure to organize content and interactive UI elements.',
+        demoUrl: 'https://abc.com',
+        figmaUrl: 'https://github.com/MRavindu/Phillips-Pharmacy',
     },
 
     {
@@ -73,14 +73,14 @@ export const projects = [
 
     {
         id: 7,
-        title: 'Personal Portfolio Website',
-        description: 'A responsive personal portfolio website showcasing projects, skills, and contact information.',
-        image: `${import.meta.env.BASE_URL}images/projects/Portfolio.jpeg`,
-        category: 'Static Website',
-        technologies: ['React', 'Tailwind CSS', 'JavaScript'],
-        metrics: 'Better showcase of projects and skills with improved user experience and visual appeal.',
-        demoUrl: 'https://mravindu.github.io/Portfolio/',
-        githubUrl: 'https://github.com/MRavindu/Portfolio',
+        title: 'Express Mobile-Store UI Design',
+        description: 'Conversion-focused e-commerce UI with structured layout and clear calls-to-action.',
+        image: `${import.meta.env.BASE_URL}images/projects/MobileLanding.png`,
+        category: 'UI Designs',
+        technologies: ['Figma'],
+        metrics: 'Improved product discoverability and user interaction via optimized layout.',
+        demoUrl: 'https://abc.com',
+        figmaUrl: 'https://github.com',
     },
 
     // {
