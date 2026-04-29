@@ -7,7 +7,7 @@ export const projects = [
         category: 'Static Website',
         technologies: ['React Js', 'Vite', 'CSS3'],
         metrics: 'Improved user engagement and reduced bounce rate through optimized UI structure',
-        demoUrl: 'https://abc.com',
+        // demoUrl: 'https://abc.com',
         githubUrl: 'https://github.com/MRavindu/Phillips-Pharmacy',
     },
 
@@ -39,11 +39,11 @@ export const projects = [
         id: 4,
         title: 'Phillips Pharmacy Staff Portal',
         description: 'Full-stack pharmacy portal for inventory, orders, and workflow management.',
-        image: `${import.meta.env.BASE_URL}images/projects/PharmacyStaff.png`,
+        image: `${import.meta.env.BASE_URL}images/projects/PharmacyStaff.jpeg`,
         category: 'Full Stack',
         technologies: ['React Js', 'Spring Boot', 'Java', 'MySQL'],
         metrics: 'Improved overall operational efficiency through optimized UI workflows',
-        demoUrl: 'https://abc.com',
+        // demoUrl: 'https://abc.com',
         githubUrl: 'https://github.com/MRavindu/Phillips-Pharmacy',
     },
 
@@ -55,7 +55,7 @@ export const projects = [
         category: 'UI Designs',
         technologies: ['Figma'],
         metrics: 'Improved visual structure to organize content and interactive UI elements.',
-        demoUrl: 'https://abc.com',
+        // demoUrl: 'https://abc.com',
         figmaUrl: 'https://github.com/MRavindu/Phillips-Pharmacy',
     },
 
@@ -79,7 +79,7 @@ export const projects = [
         category: 'UI Designs',
         technologies: ['Figma'],
         metrics: 'Improved product discoverability and user interaction via optimized layout.',
-        demoUrl: 'https://abc.com',
+        // demoUrl: 'https://abc.com',
         figmaUrl: 'https://github.com',
     },
 
